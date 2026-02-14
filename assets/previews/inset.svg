@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Inset (I)</text>
+
+  <!-- Outer Face -->
+  <path d="M50,50 L150,50 L150,150 L50,150 Z" fill="#fff" stroke="#333" stroke-width="3"/>
+
+  <!-- Inner Face (Inset) -->
+  <path d="M75,75 L125,75 L125,125 L75,125 Z" fill="#9C27B0" fill-opacity="0.2" stroke="#9C27B0" stroke-width="3"/>
+  
+  <!-- Connecting lines -->
+  <line x1="50" y1="50" x2="75" y2="75" stroke="#ccc" stroke-width="1"/>
+  <line x1="150" y1="50" x2="125" y2="75" stroke="#ccc" stroke-width="1"/>
+  <line x1="150" y1="150" x2="125" y2="125" stroke="#ccc" stroke-width="1"/>
+  <line x1="50" y1="150" x2="75" y2="125" stroke="#ccc" stroke-width="1"/>
+
+</svg>

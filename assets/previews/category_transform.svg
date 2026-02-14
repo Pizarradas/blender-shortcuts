@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="animated-preview">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#999">Transform</text>
+  
+  <!-- Gizmo Center -->
+  <circle cx="100" cy="100" r="10" fill="#fff" stroke="#333" stroke-width="2"/>
+  
+  <g class="target-element">
+      <!-- Axis Arrows -->
+      <path d="M100,100 L160,100" stroke="#F44336" stroke-width="4" marker-end="url(#arrowX)"/>
+      <path d="M100,100 L100,40" stroke="#4CAF50" stroke-width="4" marker-end="url(#arrowY)"/>
+      <path d="M100,100 L60,140" stroke="#2196F3" stroke-width="4" marker-end="url(#arrowZ)"/>
+  </g>
+
+  <defs>
+    <marker id="arrowX" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#F44336"/></marker>
+    <marker id="arrowY" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#4CAF50"/></marker>
+    <marker id="arrowZ" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#2196F3"/></marker>
+  </defs>
+</svg>

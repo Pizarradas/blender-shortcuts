@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#999">Grease Pencil</text>
+  
+  <g transform="translate(100, 90)">
+    <!-- GP Stroke -->
+    <path d="M-60,20 Q-30,-40 0,0 T60,-20" fill="none" stroke="#2196F3" stroke-width="4" stroke-linecap="round"/>
+    <!-- Onion Skinning Ghost -->
+    <path d="M-60,20 Q-30,-40 0,0 T60,-20" fill="none" stroke="#2196F3" stroke-width="4" stroke-linecap="round" opacity="0.3" transform="translate(-10, 5)"/>
+    <path d="M-60,20 Q-30,-40 0,0 T60,-20" fill="none" stroke="#2196F3" stroke-width="4" stroke-linecap="round" opacity="0.1" transform="translate(-20, 10)"/>
+    
+    <!-- Pencil Icon -->
+    <g transform="translate(60, -20) rotate(-30)">
+        <polygon points="0,0 10,-20 30,-20 20,0 10,10" fill="#FFC107"/>
+        <polygon points="10,10 0,0 0,15" fill="#333"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="animated-preview">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#999">Selection</text>
+  
+  <!-- Items -->
+  <g class="items">
+    <circle cx="60" cy="60" r="10" fill="#ccc"/>
+    <circle cx="140" cy="60" r="10" fill="#ccc"/>
+    <circle cx="60" cy="140" r="10" fill="#ccc"/>
+    <circle cx="140" cy="140" r="10" fill="#ccc"/>
+    <circle cx="100" cy="100" r="15" fill="#ccc" class="center-item"/>
+  </g>
+
+  <!-- Selection Box / Marquee -->
+  <rect x="40" y="40" width="120" height="120" fill="none" stroke="#FF9800" stroke-width="2" stroke-dasharray="6,4" class="target-element"/>
+</svg>

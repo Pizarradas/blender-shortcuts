@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Knife (K)</text>
+
+  <!-- Face -->
+  <path d="M50,50 L150,50 L150,150 L50,150 Z" fill="#fff" stroke="#333" stroke-width="3"/>
+
+  <!-- Knife Cut -->
+  <polyline points="50,80 90,110 120,90 150,120" fill="none" stroke="#E91E63" stroke-width="4" />
+  
+  <!-- Vertices created -->
+  <circle cx="90" cy="110" r="4" fill="#E91E63"/>
+  <circle cx="120" cy="90" r="4" fill="#E91E63"/>
+  
+  <!-- Knife Icon (Stylized) -->
+  <path d="M160,40 L170,30 L180,40 L160,60 Z" fill="#333"/>
+
+</svg>

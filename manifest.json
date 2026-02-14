@@ -1,0 +1,40 @@
+{
+    "name": "Blender Shortcuts Reference",
+    "id": "blender-shortcuts-v2",
+    "short_name": "Blender Keys",
+    "description": "Referencia completa de atajos de teclado para Blender 3D - 157 shortcuts organizados por categoría",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#1a1d29",
+    "theme_color": "#6c5ce7",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "/icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": [
+        "productivity",
+        "education",
+        "reference"
+    ],
+    "screenshots": [],
+    "shortcuts": [
+        {
+            "name": "Buscar atajos",
+            "short_name": "Buscar",
+            "description": "Abrir búsqueda de atajos",
+            "url": "/?action=search"
+        }
+    ]
+}

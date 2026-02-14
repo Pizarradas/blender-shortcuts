@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="animated-preview">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Rotate (R)</text>
+
+  <!-- Object -->
+  <rect x="80" y="80" width="40" height="40" fill="none" stroke="#ccc" stroke-width="2" stroke-dasharray="4,4" class="ghost-element"/>
+  
+  <g class="target-element" transform-origin="center">
+      <rect x="80" y="80" width="40" height="40" fill="#4CAF50" fill-opacity="0.2" stroke="#4CAF50" stroke-width="3" />
+  </g>
+
+  <!-- Rotation arrows -->
+  <path d="M100,40 A60,60 0 0,1 160,100" fill="none" stroke="#4CAF50" stroke-width="3" marker-end="url(#arrowhead)" class="arrow-cw"/>
+  <path d="M100,160 A60,60 0 0,1 40,100" fill="none" stroke="#4CAF50" stroke-width="3" marker-end="url(#arrowhead)" class="arrow-ccw"/>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4CAF50" />
+    </marker>
+  </defs>
+</svg>

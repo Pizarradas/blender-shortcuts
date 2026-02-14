@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="animated-preview">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#999">Merge (M)</text>
+  
+  <g class="vertices" transform="translate(100,100)">
+     <circle cx="-30" cy="20" r="5" fill="#FF9800" class="vert v1"/>
+     <circle cx="30" cy="20" r="5" fill="#FF9800" class="vert v2"/>
+     <circle cx="0" cy="-30" r="5" fill="#FF9800" class="vert v3"/>
+     
+     <!-- Guides -->
+     <line x1="-30" y1="20" x2="0" y2="0" stroke="#ddd" stroke-dasharray="4"/>
+     <line x1="30" y1="20" x2="0" y2="0" stroke="#ddd" stroke-dasharray="4"/>
+     <line x1="0" y1="-30" x2="0" y2="0" stroke="#ddd" stroke-dasharray="4"/>
+
+     <!-- Center Result -->
+     <circle cx="0" cy="0" r="8" fill="#4CAF50" opacity="0" class="vert-merged"/>
+  </g>
+</svg>

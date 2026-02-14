@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="animated-preview">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#999">Frame Selected</text>
+  
+  <!-- Group of objects -->
+  <g class="scene-objects" transform="translate(100, 100) scale(1)">
+      <!-- Background objects -->
+      <circle cx="-60" cy="-40" r="15" fill="#e0e0e0" stroke="#ccc"/>
+      <rect x="40" y="30" width="30" height="30" fill="#e0e0e0" stroke="#ccc"/>
+      
+      <!-- Target Object -->
+      <g class="target-object">
+        <rect x="-15" y="-15" width="30" height="30" fill="#FF9800" stroke="#F57C00" stroke-width="2"/>
+        <!-- Suggesting selection corners -->
+        <path d="M-20,-20 L-10,-20 M-20,-20 L-20,-10" stroke="#2196F3" stroke-width="2" fill="none"/>
+        <path d="M20,-20 L10,-20 M20,-20 L20,-10" stroke="#2196F3" stroke-width="2" fill="none"/>
+        <path d="M-20,20 L-10,20 M-20,20 L-20,10" stroke="#2196F3" stroke-width="2" fill="none"/>
+        <path d="M20,20 L10,20 M20,20 L20,10" stroke="#2196F3" stroke-width="2" fill="none"/>
+      </g>
+  </g>
+
+  <!-- Viewport Frame indicators -->
+  <rect x="20" y="20" width="160" height="150" fill="none" stroke="#2196F3" stroke-width="2" stroke-dasharray="10,5" opacity="0" class="viewport-frame"/>
+</svg>

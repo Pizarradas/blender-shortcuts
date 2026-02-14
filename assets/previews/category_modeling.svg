@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="animated-preview">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#999">Modeling</text>
+  
+  <!-- Wireframe Cube -->
+  <g class="target-element" transform="translate(100, 100)">
+    <path d="M-40,-40 L40,-40 L40,40 L-40,40 Z" fill="none" stroke="#607D8B" stroke-width="2"/>
+    <path d="M-20,-20 L60,-20 L60,60 L-20,60 Z" fill="none" stroke="#607D8B" stroke-width="2"/>
+    <path d="M-40,-40 L-20,-20 M40,-40 L60,-20 M40,40 L60,60 M-40,40 L-20,60" stroke="#607D8B" stroke-width="2"/>
+    
+    <!-- Face highlight -->
+    <rect x="-40" y="-40" width="80" height="80" fill="#607D8B" opacity="0.1"/>
+  </g>
+</svg>

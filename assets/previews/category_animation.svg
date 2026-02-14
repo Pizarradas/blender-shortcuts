@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="animated-preview">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#999">Animation</text>
+  
+  <!-- Timeline Track -->
+  <line x1="20" y1="150" x2="180" y2="150" stroke="#ccc" stroke-width="4"/>
+  
+  <!-- Keyframes -->
+  <circle cx="40" cy="150" r="6" fill="#FFC107" stroke="#333" stroke-width="1"/>
+  <circle cx="100" cy="150" r="6" fill="#FFC107" stroke="#333" stroke-width="1"/>
+  <circle cx="160" cy="150" r="6" fill="#FFC107" stroke="#333" stroke-width="1"/>
+  
+  <!-- Playhead -->
+  <path d="M40,130 L40,170" stroke="#2196F3" stroke-width="3" class="target-element"/>
+  
+  <!-- Bouncing Ball -->
+  <circle cx="40" cy="100" r="15" fill="#E91E63" class="ball"/>
+</svg>

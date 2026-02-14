@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="animated-preview">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#999">Subdivide</text>
+  
+  <g class="face" transform="translate(100,100) scale(1.5)">
+     <!-- Main Face -->
+     <rect x="-40" y="-40" width="80" height="80" fill="#e0e0e0" stroke="#333" stroke-width="2"/>
+     
+     <!-- Cuts (Hidden initially) -->
+     <line x1="0" y1="-40" x2="0" y2="40" stroke="#FF9800" stroke-width="2" class="cut-v" transform="scale(1, 0)"/>
+     <line x1="-40" y1="0" x2="40" y2="0" stroke="#FF9800" stroke-width="2" class="cut-h" transform="scale(0, 1)"/>
+     
+     <!-- Vertex in middle -->
+     <circle cx="0" cy="0" r="3" fill="#FF9800" opacity="0" class="center-vert"/>
+  </g>
+</svg>

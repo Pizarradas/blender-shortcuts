@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="animated-preview">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#999">Invert (Ctrl + I)</text>
+  
+  <g transform="translate(100,100)">
+      <!-- 3x3 Grid -->
+      <g stroke="#ddd" stroke-width="1" fill="none">
+          <rect x="-45" y="-45" width="30" height="30" class="cell c1"/> <rect x="-15" y="-45" width="30" height="30" class="cell c2"/> <rect x="15" y="-45" width="30" height="30" class="cell c3"/>
+          <rect x="-45" y="-15" width="30" height="30" class="cell c4"/> <rect x="-15" y="-15" width="30" height="30" class="cell c5"/> <rect x="15" y="-15" width="30" height="30" class="cell c6"/>
+          <rect x="-45" y="15" width="30" height="30" class="cell c7"/>  <rect x="-15" y="15" width="30" height="30" class="cell c8"/>  <rect x="15" y="15" width="30" height="30" class="cell c9"/>
+      </g>
+      
+      <!-- Overlays -->
+      <rect x="-15" y="-15" width="30" height="30" fill="#FF9800" opacity="0" class="sel-center"/>
+      
+      <g class="sel-outer" opacity="0">
+         <rect x="-45" y="-45" width="30" height="30" fill="#FF9800"/> <rect x="-15" y="-45" width="30" height="30" fill="#FF9800"/> <rect x="15" y="-45" width="30" height="30" fill="#FF9800"/>
+         <rect x="-45" y="-15" width="30" height="30" fill="#FF9800"/>                                                              <rect x="15" y="-15" width="30" height="30" fill="#FF9800"/>
+         <rect x="-45" y="15" width="30" height="30" fill="#FF9800"/>  <rect x="-15" y="15" width="30" height="30" fill="#FF9800"/>  <rect x="15" y="15" width="30" height="30" fill="#FF9800"/>
+      </g>
+  </g>
+</svg>

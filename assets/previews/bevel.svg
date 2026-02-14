@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="animated-preview">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Bevel (Ctrl+B)</text>
+  
+  <!-- Object -->
+  <g transform="translate(0, 10)">
+    <!-- Left Face -->
+    <path d="M60,80 L90,95 L90,145 L60,130 Z" fill="#90A4AE" stroke="#546E7A" stroke-width="2"/>
+    
+    <!-- Right Face -->
+    <path d="M110,95 L140,80 L140,130 L110,145 Z" fill="#78909C" stroke="#546E7A" stroke-width="2"/>
+    
+    <!-- Top Face (Split for Bevel) -->
+    <!-- Left part -->
+    <path d="M60,80 L90,65 L90,95 L60,80 Z" fill="#B0BEC5" stroke="#546E7A" stroke-width="0" display="none"/> 
+    
+    <!-- The Corner Edge being beveled -->
+    <g class="target-element">
+       <!-- Bevel Face -->
+       <path d="M90,95 L110,95 L110,145 L90,145 Z" fill="#FF9800" stroke="#E65100" stroke-width="2" class="bevel-face"/>
+       
+       <!-- Connecting Top Edges -->
+       <path d="M90,65 L110,65 L110,95 L90,95 Z" fill="#FFB74D" stroke="#E65100" stroke-width="2" class="bevel-top"/>
+    </g>
+
+    <!-- Top Left Static -->
+    <path d="M60,80 L90,65 L90,95" fill="#CFD8DC" stroke="#546E7A" stroke-width="2"/>
+    <!-- Top Right Static -->
+    <path d="M110,65 L140,80 L110,95" fill="#CFD8DC" stroke="#546E7A" stroke-width="2"/>
+    
+    <!-- Wireframe of sharp edge (ghost) -->
+    <path d="M100,70 L100,150" stroke="#ccc" stroke-width="1" stroke-dasharray="4,4" class="sharp-edge"/>
+  </g>
+</svg>

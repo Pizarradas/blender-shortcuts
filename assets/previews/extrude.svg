@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="animated-preview">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Extrude (E)</text>
+  
+  <!-- Base Cube (Bottom part) -->
+  <path d="M70,110 L100,125 L130,110 L130,140 L100,155 L70,140 Z" fill="#90A4AE" stroke="#546E7A" stroke-width="2"/>
+  <path d="M100,125 L100,155" stroke="#546E7A" stroke-width="2"/>
+  
+  <!-- Extrusion Face (Animated) -->
+  <g class="target-element">
+    <!-- Side faces created by extrusion -->
+    <path d="M70,110 L100,125 L100,85 L70,70 Z" fill="#BBDEFB" stroke="#2196F3" stroke-width="2" opacity="0.8"/>
+    <path d="M100,125 L130,110 L130,70 L100,85 Z" fill="#64B5F6" stroke="#2196F3" stroke-width="2" opacity="0.8"/>
+    
+    <!-- Top Face -->
+    <path d="M70,70 L100,85 L130,70 L100,55 Z" fill="#2196F3" stroke="#1976D2" stroke-width="2"/>
+    
+    <!-- Arrow indicating Normal -->
+    <path d="M100,55 L100,30" stroke="#FF9800" stroke-width="3" marker-end="url(#arrowhead)"/>
+  </g>
+
+  <!-- Ghost of original position -->
+  <path d="M70,110 L100,125 L130,110 L100,95 Z" fill="none" stroke="#ccc" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FF9800" />
+    </marker>
+  </defs>
+</svg>

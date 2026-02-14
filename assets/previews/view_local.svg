@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="animated-preview">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#999">Local View (/)</text>
+  
+  <g class="scene" transform="translate(100,100)">
+      <!-- Distracting objects -->
+      <g class="distractors">
+          <circle cx="-60" cy="-40" r="15" fill="#ccc"/>
+          <rect x="40" y="30" width="30" height="30" fill="#ccc"/>
+          <polygon points="-40,60 -25,30 -55,30" fill="#ccc"/>
+      </g>
+      
+      <!-- Main Object -->
+      <rect x="-25" y="-25" width="50" height="50" fill="#FF9800" stroke="#E65100" stroke-width="2" class="main-object"/>
+  </g>
+  
+  <!-- Zoom indicator or isolation frame -->
+  <rect x="10" y="10" width="180" height="160" fill="none" stroke="#4CAF50" stroke-width="4" opacity="0" class="iso-frame"/>
+</svg>

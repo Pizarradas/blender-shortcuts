@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="animated-preview">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Duplicate (Shift+D)</text>
+  
+  <!-- Original -->
+  <g class="original-element">
+    <circle cx="70" cy="100" r="25" fill="#90A4AE" stroke="#546E7A" stroke-width="2"/>
+    <text x="70" y="100" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-size="20">1</text>
+  </g>
+
+  <!-- Duplicate (Ghost/Target) -->
+  <g class="target-element" opacity="0">
+    <circle cx="130" cy="100" r="25" fill="#2196F3" stroke="#1976D2" stroke-width="2"/>
+    <text x="130" y="100" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-size="20">2</text>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M95,100 L105,100" stroke="#FF9800" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FF9800" />
+    </marker>
+  </defs>
+</svg>

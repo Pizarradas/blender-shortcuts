@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="animated-preview">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#999">Select Linked (L)</text>
+  
+  <g transform="translate(100,100)">
+    <!-- Island 1 (Left) -->
+    <g class="island-1" transform="translate(-40, 0)">
+        <polygon points="0,-30 25,15 -25,15" fill="#e0e0e0" stroke="#999" stroke-width="2" class="mesh-1"/>
+        <circle cx="0" cy="-10" r="5" fill="#ccc" class="cursor-1" opacity="0"/>
+    </g>
+
+    <!-- Island 2 (Right) -->
+    <g class="island-2" transform="translate(40, 0)">
+        <rect x="-20" y="-20" width="40" height="40" fill="#e0e0e0" stroke="#999" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

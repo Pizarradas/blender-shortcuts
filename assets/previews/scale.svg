@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="animated-preview">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Scale (S)</text>
+
+  <!-- Original size -->
+  <rect x="85" y="85" width="30" height="30" fill="none" stroke="#ccc" stroke-width="2" stroke-dasharray="4,4" class="ghost-element"/>
+
+  <!-- Scaled size -->
+  <g class="target-element" transform-origin="100 100">
+      <rect x="60" y="60" width="80" height="80" fill="#FF9800" fill-opacity="0.2" stroke="#FF9800" stroke-width="3"/>
+  </g>
+
+  <!-- Arrows -->
+  <g class="arrows">
+      <path d="M145,100 L165,100" stroke="#FF9800" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <path d="M55,100 L35,100" stroke="#FF9800" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <path d="M100,55 L100,35" stroke="#FF9800" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <path d="M100,145 L100,165" stroke="#FF9800" stroke-width="2" marker-end="url(#arrowhead)"/>
+  </g>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FF9800" />
+    </marker>
+  </defs>
+</svg>

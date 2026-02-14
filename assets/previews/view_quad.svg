@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="animated-preview">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#999">Quad View</text>
+  
+  <!-- Single View Container -->
+  <g class="single-view">
+    <rect x="10" y="10" width="180" height="160" fill="#fff" stroke="#ccc" stroke-width="2"/>
+    <!-- Object in middle -->
+    <rect x="85" y="75" width="30" height="30" fill="#FF9800" stroke="#F57C00"/>
+  </g>
+  
+  <!-- Quad View Lines (Hidden initially) -->
+  <line x1="100" y1="10" x2="100" y2="170" stroke="#2196F3" stroke-width="2" class="split-line-v" transform="scale(1, 0)" transform-origin="center"/>
+  <line x1="10" y1="90" x2="190" y2="90" stroke="#2196F3" stroke-width="2" class="split-line-h" transform="scale(0, 1)" transform-origin="center"/>
+
+  <!-- Small views representatives (Hidden initially) -->
+  <g class="quad-content" opacity="0">
+     <!-- Top Left -->
+     <rect x="40" y="40" width="20" height="20" fill="none" stroke="#FF9800" stroke-width="1"/>
+     <!-- Top Right -->
+     <rect x="140" y="40" width="20" height="20" fill="none" stroke="#FF9800" stroke-width="1"/>
+     <!-- Bottom Left -->
+     <rect x="40" y="120" width="20" height="20" fill="none" stroke="#FF9800" stroke-width="1"/>
+     <!-- Bottom Right -->
+     <rect x="140" y="120" width="20" height="20" fill="none" stroke="#FF9800" stroke-width="1"/>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="95%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#999">Numpad 1 / 3 / 7</text>
+  
+  <!-- Front (1) -->
+  <g transform="translate(40, 60)">
+      <circle cx="0" cy="0" r="20" fill="none" stroke="#ddd" stroke-width="2"/>
+      <circle cx="0" cy="0" r="10" fill="#8bc34a"/> <!-- Y axis green spot (Front view looks down Y often or -Y) -->
+      <text x="0" y="35" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#555">Front (1)</text>
+      <!-- Axis lines suggestion -->
+      <line x1="0" y1="0" x2="0" y2="-15" stroke="#2196F3" stroke-width="2"/> <!-- Z up -->
+      <line x1="0" y1="0" x2="15" y2="0" stroke="#F44336" stroke-width="2"/> <!-- X right -->
+  </g>
+
+  <!-- Side (3) -->
+  <g transform="translate(160, 60)">
+      <circle cx="0" cy="0" r="20" fill="none" stroke="#ddd" stroke-width="2"/>
+      <circle cx="0" cy="0" r="10" fill="#F44336"/> <!-- X axis red spot -->
+      <text x="0" y="35" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#555">Right (3)</text>
+      <line x1="0" y1="0" x2="0" y2="-15" stroke="#2196F3" stroke-width="2"/> <!-- Z up -->
+      <line x1="0" y1="0" x2="-15" y2="0" stroke="#8bc34a" stroke-width="2"/> <!-- Y left -->
+  </g>
+
+  <!-- Top (7) -->
+  <g transform="translate(100, 130)">
+      <circle cx="0" cy="0" r="20" fill="none" stroke="#ddd" stroke-width="2"/>
+      <circle cx="0" cy="0" r="10" fill="#2196F3"/> <!-- Z axis blue spot -->
+      <text x="0" y="35" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#555">Top (7)</text>
+      <line x1="0" y1="0" x2="0" y2="15" stroke="#8bc34a" stroke-width="2"/> <!-- Y down -->
+      <line x1="0" y1="0" x2="15" y2="0" stroke="#F44336" stroke-width="2"/> <!-- X right -->
+  </g>
+</svg>

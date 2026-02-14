@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#999">General</text>
+  
+  <g transform="translate(100, 90)">
+    <!-- Abstract Composition: Cube, Sphere, Cone -->
+    
+    <!-- Cube (Left) -->
+    <rect x="-50" y="-10" width="30" height="30" rx="2" fill="#607D8B" stroke="#455A64" stroke-width="2"/>
+    
+    <!-- Cone (Center Back) -->
+    <path d="M0,-50 L-20,-10 L20,-10 Z" fill="#90A4AE" stroke="#455A64" stroke-width="2"/>
+    
+    <!-- Sphere (Right Front) -->
+    <circle cx="35" cy="15" r="20" fill="#CFD8DC" stroke="#455A64" stroke-width="2"/>
+    
+    <!-- Ground Line -->
+    <line x1="-70" y1="40" x2="70" y2="40" stroke="#B0BEC5" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

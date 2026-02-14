@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Circle Select (C)</text>
+
+  <!-- Grid of items -->
+  <circle cx="60" cy="60" r="8" fill="#ccc"/>
+  <circle cx="100" cy="60" r="8" fill="#ccc"/>
+  <circle cx="140" cy="60" r="8" fill="#ccc"/>
+  
+  <circle cx="60" cy="100" r="8" fill="#ccc"/>
+  <circle cx="100" cy="100" r="8" fill="#4CAF50"/> <!-- Selected -->
+  <circle cx="140" cy="100" r="8" fill="#4CAF50"/> <!-- Selected -->
+  
+  <circle cx="60" cy="140" r="8" fill="#ccc"/>
+  <circle cx="100" cy="140" r="8" fill="#4CAF50"/> <!-- Selected -->
+  <circle cx="140" cy="140" r="8" fill="#ccc"/>
+
+  <!-- Brush Circle -->
+  <circle cx="120" cy="120" r="40" fill="none" stroke="#4CAF50" stroke-width="2" stroke-dasharray="4,4"/>
+  <circle cx="120" cy="120" r="2" fill="#4CAF50"/>
+</svg>

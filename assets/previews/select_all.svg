@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="animated-preview">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Select All (A)</text>
+  
+  <!-- Objects -->
+  <g class="objects">
+    <rect x="40" y="50" width="30" height="30" fill="#ccc" stroke="#999" stroke-width="2" class="obj-1"/>
+    <circle cx="100" cy="130" r="20" fill="#ccc" stroke="#999" stroke-width="2" class="obj-2"/>
+    <polygon points="150,50 170,90 130,90" fill="#ccc" stroke="#999" stroke-width="2" class="obj-3"/>
+  </g>
+
+  <!-- Highlight Outline (Hidden initially) -->
+  <rect x="35" y="45" width="40" height="40" fill="none" stroke="#FF9800" stroke-width="3" opacity="0" class="highlight-1"/>
+  <circle cx="100" cy="130" r="25" fill="none" stroke="#FF9800" stroke-width="3" opacity="0" class="highlight-2"/>
+  <path d="M150,40 L180,95 L120,95Z" fill="none" stroke="#FF9800" stroke-width="3" opacity="0" class="highlight-3"/>
+
+</svg>

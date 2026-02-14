@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#999">Modifiers</text>
+  
+  <g transform="translate(100, 90)">
+    <!-- Wrench (Blue) -->
+    <path d="M-15,-25 L-35,-45 A15,15 0 0,0 -55,-25 L-40,-10 L-15,-25 Z" fill="#2196F3"/>
+    <path d="M10,0 L-10,-20 L-35,-5 L-15,15 Z" fill="#2196F3"/>
+    <rect x="-10" y="0" width="40" height="12" transform="rotate(45)" fill="#2196F3"/>
+    
+    <!-- Modifier Stack Representation -->
+    <rect x="20" y="-30" width="60" height="15" rx="2" fill="#444"/>
+    <rect x="20" y="-10" width="60" height="15" rx="2" fill="#555"/>
+    <rect x="20" y="10" width="60" height="15" rx="2" fill="#666"/>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="animated-preview">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#999">Shade Smooth</text>
+  
+  <g transform="translate(100,100)">
+    <!-- Flat Shadow (Polygon) -->
+    <polygon points="0,-40 35,-20 35,20 0,40 -35,20 -35,-20" fill="#ddd" stroke="#999" stroke-width="1" class="object-flat"/>
+    
+    <!-- Smooth Shadow (Circle) -->
+    <circle cx="0" cy="0" r="38" fill="url(#grad1)" opacity="0" class="object-smooth"/>
+  </g>
+  
+  <defs>
+    <radialGradient id="grad1" cx="30%" cy="30%" r="70%" fx="30%" fy="30%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(200,200,200);stop-opacity:1" />
+    </radialGradient>
+  </defs>
+</svg>

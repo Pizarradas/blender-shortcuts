@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="animated-preview">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Loop Cut (Ctrl+R)</text>
+
+  <!-- Cylinder / Tube shape -->
+  <path d="M60,60 L140,60 L140,140 L60,140 Z" fill="#E0E0E0" stroke="#9E9E9E" stroke-width="2" display="none"/>
+  
+  <!-- 3D Cube-ish shape for Loop Cut -->
+  <g transform="translate(50, 50)">
+      <!-- Faces -->
+      <path d="M0,20 L80,0 L80,80 L0,100 Z" fill="#B0BEC5" stroke="#546E7A" stroke-width="2"/>
+      <path d="M80,0 L120,20 L120,100 L80,80 Z" fill="#90A4AE" stroke="#546E7A" stroke-width="2"/>
+      
+      <!-- The Loop Cut Line -->
+      <path d="M0,60 L80,40 L120,60" fill="none" stroke="#FFEB3B" stroke-width="4" stroke-linecap="round" class="highlight-loop"/>
+      <path d="M0,60 L40,80 L120,60" fill="none" stroke="#FFEB3B" stroke-width="4" stroke-dasharray="4,4" opacity="0.5" class="highlight-loop-hidden"/>
+  </g>
+
+  <!-- Mouse Icon / Arrows indicating slide -->
+  <g class="slide-arrows" opacity="0">
+      <path d="M90,70 L90,50" stroke="#FF9800" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <path d="M90,110 L90,130" stroke="#FF9800" stroke-width="2" marker-end="url(#arrowhead)"/>
+  </g>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FF9800" />
+    </marker>
+  </defs>
+</svg>

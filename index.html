@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blender Shortcuts Reference</title>
+
+    <!-- PWA Meta Tags -->
+    <!-- PWA Meta Tags -->
+    <meta name="description"
+        content="Referencia completa de atajos de teclado para Blender 3D. Optimiza tu flujo de trabajo.">
+    <meta name="theme-color" content="#1a1d29">
+    <meta name="author" content="José Luis Pizarro">
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://blender-shortcuts.vercel.app/"> <!-- Placeholder URL -->
+    <meta property="og:title" content="Blender Shortcuts Reference">
+    <meta property="og:description"
+        content="Referencia completa de atajos de teclado para Blender 3D. Creado por José Luis Pizarro.">
+    <meta property="og:image" content="./icons/icon-512.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://blender-shortcuts.vercel.app/">
+    <meta property="twitter:title" content="Blender Shortcuts Reference">
+    <meta property="twitter:description"
+        content="Referencia completa de atajos de teclado para Blender 3D. Creado por José Luis Pizarro.">
+    <meta property="twitter:image" content="./icons/icon-512.png">
+
+    <!-- iOS Support -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Blender Shortcuts">
+    <link rel="apple-touch-icon" href="./icons/icon-192.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/features.css">
+    <link rel="stylesheet" href="./css/polish.css">
+
+    <!-- JavaScript - i18n first, then data, modules, and app -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="./js/i18n.js"></script>
+    <script src="./js/app_data.js" defer></script>
+    <script src="./js/stats.js" defer></script>
+    <script src="./js/settings.js" defer></script>
+    <script src="./js/animations.js" defer></script>
+    <script src="./js/app.js" defer></script>
+</head>
+
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link" data-i18n="skipToContent">Saltar al contenido principal</a>
+
+    <!-- Screen Reader Live Region -->
+    <div id="sr-live" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <header class="app-header">
+        <div class="header-content">
+            <div>
+                <h1 data-i18n="title">⌨️ Atajos Blender</h1>
+                <p data-i18n="subtitle">Referencia completa de shortcuts para Blender 3D</p>
+            </div>
+            <div style="display: flex; gap: 0.75rem; align-items: center;">
+                <button id="languageToggle" class="language-toggle" aria-label="Cambiar idioma / Change language"
+                    title="Cambiar idioma / Change language">
+                    <span class="lang-es">ES</span>
+                    <span class="separator">|</span>
+                    <span class="lang-en">EN</span>
+                </button>
+                <button id="tipsBtn" class="theme-toggle tips-highlight" aria-label="Tips & Trucos"
+                    title="Tips & Trucos">
+                    <i class="fas fa-lightbulb"></i>
+                </button>
+                </button>
+                <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema" data-i18n-aria="changeTheme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Filters -->
+        <div class="filters">
+            <!-- Search & Toggle Bar -->
+            <div class="filter-bar">
+                <div class="search-box" role="search">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <input type="text" id="search" placeholder="Buscar por acción, atajo..." aria-label="Buscar atajos"
+                        data-i18n-placeholder="searchPlaceholder" data-i18n-aria="searchPlaceholder">
+                    <button id="clearSearchBtn" class="clear-search-btn" aria-label="Limpiar búsqueda" hidden>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 1L1 13M1 1L13 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <button id="filterToggleBtn" class="filter-toggle-btn" aria-expanded="false"
+                    aria-controls="filterPanel">
+                    <i class="fas fa-sliders-h"></i>
+                    <span data-i18n="filterFtoggle">Filtros</span>
+                    <span id="filterCountBadge" class="filter-count" hidden>0</span>
+                </button>
+            </div>
+
+            <!-- Active Filters Chips (Visible when filters are active) -->
+            <div id="activeFilters" class="active-filters" hidden>
+                <!-- Dynamic chips -->
+            </div>
+
+            <!-- Collapsible Filter Panel -->
+            <div id="filterPanel" class="filter-panel" hidden>
+                <div class="filter-grid">
+                    <div class="select-wrapper">
+                        <label for="categoryFilter" class="sr-only" data-i18n="category">Categoría</label>
+                        <select id="categoryFilter">
+                            <option value="" data-i18n="filterCategory">Todas las categorías</option>
+                        </select>
+                    </div>
+
+                    <div class="select-wrapper">
+                        <label for="difficultyFilter" class="sr-only" data-i18n="difficulty">Dificultad</label>
+                        <select id="difficultyFilter">
+                            <option value="" data-i18n="filterDifficulty">Todas las dificultades</option>
+                            <option value="beginner" data-i18n="beginner">🟢 Principiante</option>
+                            <option value="intermediate" data-i18n="intermediate">🟡 Intermedio</option>
+                            <option value="advanced" data-i18n="advanced">🔴 Avanzado</option>
+                        </select>
+                    </div>
+
+                    <div class="select-wrapper">
+                        <label for="contextFilter" class="sr-only" data-i18n="context">Contexto</label>
+                        <select id="contextFilter">
+                            <option value="" data-i18n="filterContext">Todos los contextos</option>
+                        </select>
+                    </div>
+
+                    <div class="select-wrapper">
+                        <label for="workflowFilter" class="sr-only" data-i18n="workflow">Workflow</label>
+                        <select id="workflowFilter">
+                            <option value="" data-i18n="filterWorkflow">Todos los flujos</option>
+                        </select>
+                    </div>
+
+                    <div class="select-wrapper">
+                        <label for="versionFilter" class="sr-only" data-i18n="version">Versión</label>
+                        <select id="versionFilter">
+                            <option value="" data-i18n="filterVersion">Todas las versiones</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="filter-actions">
+                    <label class="favorites-toggle">
+                        <input type="checkbox" id="favoritesOnly">
+                        <i class="far fa-star" aria-hidden="true"></i> <span data-i18n="showFavorites">Solo
+                            favoritos</span>
+                    </label>
+
+                    <button id="resetBtn" class="btn-reset">
+                        <i class="fas fa-undo"></i> <span data-i18n="resetFilters">Limpiar todo</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="status-bar">
+                <span id="resultCount" role="status" aria-live="polite" aria-atomic="true"></span>
+            </div>
+
+            <!-- View Toggle -->
+            <div class="view-toggle">
+                <button id="tableViewBtn" class="active" aria-label="Vista de tabla" title="Vista de tabla">
+                    <i class="fas fa-table"></i> Tabla
+                </button>
+                <button id="cardsViewBtn" aria-label="Vista de tarjetas" title="Vista de tarjetas">
+                    <i class="fas fa-th-large"></i> Cards
+                </button>
+            </div>
+
+            <!-- Table View -->
+            <div id="tableView" class="table-container">
+                <table id="shortcutsTable" role="table">
+                    <thead>
+                        <tr>
+                            <th class="col-star" scope="col" data-i18n-title="favorite" title="Favorito">★</th>
+                            <th class="sortable" scope="col" data-column="action" tabindex="0" role="button"
+                                aria-label="Ordenar por acción" data-i18n="action">Acción</th>
+                            <th scope="col" data-i18n="shortcut">Atajo</th>
+                            <th class="sortable" scope="col" data-column="category" tabindex="0" role="button"
+                                aria-label="Ordenar por categoría" data-i18n="category">Categoría</th>
+                            <th class="col-difficulty sortable" scope="col" data-column="difficulty" tabindex="0"
+                                role="button" aria-label="Ordenar por dificultad" data-i18n-title="difficulty"
+                                title="Dificultad">📊</th>
+                            <th scope="col" aria-label="Detalles y notas" data-i18n="details">Detalles</th>
+                            <th scope="col" aria-label="Etiquetas" data-i18n="tags">Etiquetas</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!-- Rendered by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cards View -->
+            <div id="cardsView" class="cards-container" style="display: none;">
+                <!-- Rendered by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Tips Modal -->
+    <div id="tipsModal" class="modal" hidden>
+        <div class="modal__overlay"></div>
+        <div class="modal__content modal__content--large">
+            <header class="modal__header">
+                <h2 data-i18n="tipsTitle">💡 Tips & Trucos Pro</h2>
+                <button class="modal__close" aria-label="Cerrar" data-i18n-aria="close">×</button>
+            </header>
+            <div id="tipsList" class="modal__body tips-grid">
+                <!-- Dynamic content -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Shortcuts Modal (Restored for functionality) -->
+    <div id="relatedModal" class="modal" hidden>
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <header class="modal__header">
+                <h2>Atajos Relacionados</h2>
+                <button class="modal__close" aria-label="Cerrar">×</button>
+            </header>
+            <div id="relatedShortcutsList" class="modal__body">
+                <!-- Dynamic content -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Detail Info Modal -->
+    <div id="detailModal" class="modal" hidden>
+        <div class="modal__overlay"></div>
+        <div class="modal__content modal__content--large">
+            <header class="modal__header">
+                <h2 id="detailTitle">Detalles del Atajo</h2>
+                <button class="modal__close" aria-label="Cerrar">×</button>
+            </header>
+            <div id="detailContent" class="modal__body">
+                <!-- Dynamic content -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <footer class="app-footer">
+        <small data-i18n="footerText">💡 Haz clic en cualquier atajo para copiarlo al portapapeles</small>
+    </footer>
+
+    <!-- JavaScript -->
+</body>
+
+</html>

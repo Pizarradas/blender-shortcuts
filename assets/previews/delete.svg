@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#999">Delete (X)</text>
+  
+  <g transform="translate(100, 100)">
+    <!-- Fake Blender Menu -->
+    <rect x="-60" y="-70" width="120" height="110" rx="4" fill="#2b2b2b" stroke="#000" stroke-width="2" filter="drop-shadow(3px 3px 5px rgba(0,0,0,0.5))"/>
+    
+    <!-- Menu Header -->
+    <path d="M-60,-50 H60" stroke="#444" stroke-width="1"/>
+    <text x="0" y="-58" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="10" font-weight="bold">Delete</text>
+    
+    <!-- Menu Items -->
+    <g font-family="sans-serif" font-size="11" fill="#ddd" text-anchor="start">
+        <text x="-50" y="-30">Vertices</text>
+        <text x="-50" y="-10">Edges</text>
+        <text x="-50" y="10">Faces</text>
+        <text x="-50" y="30" fill="#ccad00">Dissolve...</text>
+    </g>
+    
+    <!-- Highlighted Item Selection -->
+    <rect x="-58" y="-40" width="116" height="18" fill="#4772b3" opacity="0.3" rx="2"/>
+  </g>
+</svg>

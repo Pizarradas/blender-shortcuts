@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="animated-preview">
+  <rect x="0" y="0" width="200" height="200" fill="#f8f9fa"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Move (G)</text>
+  
+  <!-- Grid -->
+  <path d="M20,100 L180,100 M100,20 L100,180" stroke="#e0e0e0" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <!-- Original position ghost -->
+  <rect x="60" y="60" width="40" height="40" fill="none" stroke="#ccc" stroke-width="2" stroke-dasharray="4,4" class="ghost-element"/>
+  
+  <!-- Arrow path -->
+  <path d="M80,80 L120,120" stroke="#2196F3" stroke-width="2" marker-end="url(#arrowhead)" class="arrow"/>
+  
+  <!-- New position -->
+  <rect x="100" y="100" width="40" height="40" fill="#2196F3" fill-opacity="0.2" stroke="#2196F3" stroke-width="3" class="target-element"/>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2196F3" />
+    </marker>
+  </defs>
+</svg>
