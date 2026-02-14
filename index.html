@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive reference of Blender keyboard shortcuts with search and filtering capabilities">
+    <title>Blender Keyboard Shortcuts - Quick Reference</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Blender Keyboard Shortcuts</h1>
+            <p class="subtitle">Interactive reference for 3D artists and learners</p>
+        </header>
+
+        <div class="controls" role="search">
+            <div class="search-wrapper">
+                <label for="search-input" class="visually-hidden">Search shortcuts</label>
+                <input 
+                    type="search" 
+                    id="search-input" 
+                    class="search-input" 
+                    placeholder="Search shortcuts by name or description..."
+                    aria-label="Search shortcuts by name or description"
+                    autocomplete="off"
+                >
+                <span class="search-icon" aria-hidden="true">🔍</span>
+            </div>
+
+            <div class="filter-wrapper">
+                <label for="category-filter" class="filter-label">Filter by category:</label>
+                <select id="category-filter" class="category-filter" aria-label="Filter shortcuts by category">
+                    <option value="all">All Categories</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="stats" aria-live="polite">
+            Showing <span id="visible-count">0</span> of <span id="total-count">0</span> shortcuts
+        </div>
+
+        <main id="shortcuts-container" class="shortcuts-container" role="main">
+            <p class="loading-message">Loading shortcuts...</p>
+        </main>
+
+        <footer>
+            <p>Press <kbd>Ctrl</kbd> + <kbd>F</kbd> to focus search. Navigate with keyboard for better accessibility.</p>
+            <p class="footer-info">Blender Shortcuts Reference &copy; 2026</p>
+        </footer>
+    </div>
+
+    <script src="shortcuts-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
